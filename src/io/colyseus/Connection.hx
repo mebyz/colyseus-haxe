@@ -41,7 +41,7 @@ class Connection {
             this.onMessage(bytes);
         }
 
-        this.ws.onclose = function() {
+        this.ws.onclose = function(?e) {
             this.onClose();
         }
 
